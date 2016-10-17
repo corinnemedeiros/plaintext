@@ -41,7 +41,8 @@ characters to skip before finding the next true character. Then it prints the de
 encoded_string = "1uF6YHggr3A4jk09L18L0 5OKerJI0S1h 2kkH3nm3E2BBR7koHYTgRE1d!ppp"
 
 # tested encoded strings: "2nsb0u3iohg" , "4oikem3hyea2ngd1ph4jfyya5opl91n" , \
-	# "8uoplerfyc3ytho289r1ui2ttn0n5freswe" , "0i4yyhe 1dl3rr0o2ewv1re3pl2 1ty0o2wwu"
+	# "8uoplerfyc3ytho289r1ui2ttn0n5freswe" , "0i4yyhe 1dl3rr0i2ewk1re3pl2 1ty0o2wwu" \
+	# "1uF6YHggr3A4jk09L18L0 5OKerJI0S1h 2kkH3nm3E2BBR7koHYTgRE1d!ppp"
 
 # an empty list to store found characters
 DECODED_WORD = []
@@ -79,8 +80,5 @@ def plaintext(encoded_string):
 
 	print "The decoded string is: " + "\"" + ''.join(DECODED_WORD) + "\""
 
+
 plaintext(encoded_string)
-
-
-
-

@@ -4,7 +4,7 @@ encoded_string = "12oocvz09jqquiH11yywxsanmvbpI13yer6twweop14s 21gebwvsrxeqdwygr
 # multi-digit test strings: "12oocvz09jqquiH11yywxsanmvbpI13yer6twweop14s 21gebwvsrxeqdwygrtuhijwT11hhllknbvxzdH00E01iR10kkjsagetrdE"
 	# "19uhge13btrrdewert9kly00a10nhee!+h89by//pp"
 
-# single-digit test string: "2nsb0u3iohg" , "3ftgB2mmL0U6ui09vcEopp" , "1uw8hjloiehnh0y" , "3kooB5plie4O0O"
+# single-digit test strings: "2nsb0u3iohg" , "3ftgB2mmL0U6ui09vcEopp" , "1uw8hjloiehnh0y" , "3kooB5plie4O0O"
 	# caused "ValueError: invalid literal for int() with base 10: '2p'" error: "2poh9nhe62ollte0l13l51urawwo"
 
 # empty lists to store found characters
@@ -32,7 +32,7 @@ def plaintext(encoded_string):
 	 		number_of_skips = CHARACTER_LIST[i]
 
 	 		# checks if character at index (i + 1) is a digit
-	 		if CHARACTER_LIST[i + 1].isdigit() == True:
+	 		if LENGTH >= 1 and CHARACTER_LIST[i + 1].isdigit() == True:
 
 	 			plaintext_multidigit(encoded_string)
 
